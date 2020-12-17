@@ -270,7 +270,22 @@ def UNET_AE(layer_N, input_size, input_stack_num=2, pool=True, activation='relu'
 
 def XNET(layer_N, input_size, input_stack_num=2, pool=True, activation='relu'):
     '''
-    UNet++ with 8x downsampling rate
+    Nest-UNet (or UNet++) with three down- and upsampling levels.
+    
+    Input
+    ----------
+        layer_N: Number of convolution filters on each down- and upsampling levels
+                 Should be an iterable of four int numbers, e.g., [32, 64, 128, 256]
+        
+        input_size: a tuple that feed input keras.layers.Input, e.g. (None, None, 3)
+        input_stack_num: number of stacked convolutional layers before entering the first downsampling block
+        activation: 'relu' for ReLU or 'leaky' for Leaky ReLU
+        pool: True for maxpooling, False for strided convolutional layers
+
+    Output
+    ----------
+        model: the Keras functional API model, i.e., keras.models.Model(inputs=[IN], outputs=[OUT])
+    
     '''
     
     # input layer
