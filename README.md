@@ -24,6 +24,13 @@ For the downscaling of daily precipitation,  UNet takes (LR) precipitation, HR p
 
 3. The authors are still working on this downscaling project. Contacting us if you have any concerns.
 
+# Dependencies
+
+* Python 3.6, Tensorflow 2.1, Keras 2.2
+
+* numpy, scipy, h5py, etc. as available in `conda`.
+
+
 # Data
 
 HR TMAX/TMIN and daily precipitation fields are obtained from the 4-km PRISM (Parameter Regressions on Independent Slopes Model).
