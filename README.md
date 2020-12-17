@@ -28,7 +28,7 @@ For the downscaling of daily precipitation,  UNet takes (LR) precipitation, HR p
 
 HR TMAx/TMIN and daily precipitation fields are obtained from PRISM (Parameter Regressions on Independent Slopes Model).
 
-The 4-km near-real-time PRISM, and PRISM monthly normals in the Continental US is availabe at PRISM Climate Group (this repository provides an example downloading script):
+The 4-km near-real-time PRISM, and PRISM monthly normals in the Continental US is availabe at PRISM Climate Group (this repository provides an example of downloading script):
 
 * PRISM Climate Group, 2004: Daily total precipitation and monthlynormals. Oregon State University, https://prism.oregonstate.edu.
 
@@ -46,7 +46,7 @@ Elevation data is obtained from ETOPO1 1 Arc-Minute Global Relief Model (accessi
 
 * Ocean grid points, not-a-number values are corrected to zero.
 
-* 2-m temperature is standardized, precipitation is normalized through power transformation, e.g., log(X+1), and a minimum-maximum normalization. Elevation is standarized with paired with 2-m temperature, and is normalized to [0, 1] when paired with precipitation.
+* 2-m temperature is standardized, precipitation is normalized through power transformation, e.g., log(X+1), and a minimum-maximum normalization. Elevation is standarized when paired with 2-m temperature, and is normalized to [0, 1] when paired with precipitation.
 
 # Contact
 
