@@ -18,9 +18,9 @@ For the downscaling of daily precipitation,  UNet takes (LR) precipitation, HR p
 
 **Identified issues**
 
-1. The fine-tuning steps of Table 2, Sha et al. (2020a) can improve the performance of UNet-AE. However, the authors found that adversarial training can show even larger benefits. The transition from semi-supervised fine-tuning to adversarial training is not complicated --- replacing the HR elevation output branch to a CNN classifier and update UNet with classification loss.
+1. The authors found that adversarial training can show even larger performance gains than the fine-tuning steps of Table 2, Sha et al. (2020a). The transition from semi-supervised fine-tuning to adversarial training is not complicated --- replacing the HR elevation output branch with a CNN classifier and update UNet with classification loss.
 
-2. when UNet is applied to precipitation downscaling, a shift-of-distribution can be found. Nest-UNet is doing slightly better but not free of this issue. Replacing the thresholding approach in Sha et al. (2020b) with a grid-point-wise quantile mapping step can solve the problem.
+2. A shift-of-distribution problem (i.e. under estimating precipitaiton extremes) is found when UNet is applied to precipitation downscaling. Nest-UNet is doing slightly better but not free of this issue. Replacing the thresholding approach in Sha et al. (2020b) with quantile mapping step can solve this problem.
 
 3. The authors are still working on this downscaling project. Contacting us if you have any concerns.
 
