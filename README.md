@@ -9,9 +9,9 @@ Part I: Daily maximum and minimum 2-m temperature. J. Appl. Meteor. Climatol., 5
 Part II: Daily precipitation. J. Appl. Meteor. Climatol., 59, 2075–2092, https://doi.org/10.1175/JAMC-D-20-0058.1.
 
 
-*Update*
+*May 29, 2021*
 
-The authors have implemented the UNET and its variants in the [keras-unet-collection](https://github.com/yingkaisha/keras-unet-collection).
+*Update:* the authors have implemented the UNET and its variants in the [keras-unet-collection](https://github.com/yingkaisha/keras-unet-collection).
 
 This package is available through PIPy:
 ```
