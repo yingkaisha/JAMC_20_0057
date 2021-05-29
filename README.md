@@ -8,6 +8,16 @@ Part I: Daily maximum and minimum 2-m temperature. J. Appl. Meteor. Climatol., 5
 * Sha, Y., D. J. Gagne II, G. West, and R. Stull, 2020b: Deep-learning-based gridded downscaling of surface meteorological variables in complex terrain. 
 Part II: Daily precipitation. J. Appl. Meteor. Climatol., 59, 2075–2092, https://doi.org/10.1175/JAMC-D-20-0058.1.
 
+
+*Update*
+
+The authors have implemented the UNET and its variants in the [keras-unet-collection](https://github.com/yingkaisha/keras-unet-collection).
+
+This package is available through PIPy:
+```
+pip install keras-unet-collection
+```
+
 # Overview
 
 A deterministic encoder-decoder convolutional neural network, UNet, is applied to the gridded downscaling of daily maximum/minimum 2-m temperature (TMAX/TMIN; Sha et al. 2020a) and precipitation (Sha et al.  2020b). 
